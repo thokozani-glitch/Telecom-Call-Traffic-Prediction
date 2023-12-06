@@ -121,3 +121,8 @@ if not actual_value.empty:
     st.write(f'Difference between Actual and Predicted: {actual_value - predicted_traffic[0]}')
 else:
     st.warning(f'No actual data available for {quarter_to_predict} {year_to_predict}.')
+
+    # Add debugging output
+st.write("Debugging Information:")
+st.write(f"Python Version: {sys.version}")
+st.write(f"Streamlit Version: {st.__version__}")
